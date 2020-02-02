@@ -4,7 +4,7 @@
 <head>
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <title>Chapayom Order</title>
 
@@ -12,90 +12,91 @@
 
 <body>
 
-  <nav class="navbar is-transparent">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-      </a>
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
+  <div id="app">
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="https://bulma.io/">
-          Home
-        </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
-            Docs
-          </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
-              Overview
-            </a>
-            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-              Modifiers
-            </a>
-            <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-              Columns
-            </a>
-            <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
-              Layout
-            </a>
-            <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-              Form
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
-              Elements
-            </a>
-            <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-              Components
-            </a>
+    <section class="section">
+      <nav class="navbar is-fixed-top">
+        <div class="card pb-2">
+          <div class="card-content is-paddingless">
+            <div class="columns is-gapless is-mobile pt-2">
+              <div class="column">
+                <figure class="image is-5by3"><img src="https://chapayom.com/wp-content/uploads/2017/09/LOGO-OD.png"></figure>
+              </div>
+              <div class="column is-8" style="padding-right: 3vw !important; padding-top: 2vw !important;">
+                <p class="control is-pulled-right">
+                  <figure class="image is-24x24 is-pulled-right">
+                    <img class="is-rounded" id="userImg" src="https://versions.bulma.io/0.7.0/images/placeholders/256x256.png">
+                  </figure>
+                </p>
+                <p class="control is-pulled-right info-font"><span id="userName"></span></p>
+                <p class="control is-pulled-right info-font"><span id="location">Location</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h5 class="title is-5">ระบบสั่งสินค้า</h5>
+
+        <div class="columns">
+
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="columns is-mobile">
+                  <div class="column">
+                    <h6 class="title is-6">ชาแดง</h6>
+                  </div>
+                  <div class="columns is-mobile is-gapless">
+                    <div class="column">
+                      <button class="button is-success"><i class="fas fa-minus-circle"></i></button>
+                    </div>
+                    <div class="column fb-non">
+                      <div class="control">
+                        <input class="input item-input" type="text" placeholder="จำนวน">
+                      </div>
+                    </div>
+                    <div class="column">
+                      <button class="button is-success"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <footer class="card-footer pt-2">
+                  <p class="subtitle is-7 is-small">ราคา: 550 บาท/ถุง</p>
+                </footer>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
-                href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
-                <span class="icon">
-                  <i class="fab fa-twitter"></i>
-                </span>
-                <span>
-                  Tweet
-                </span>
-              </a>
-            </p>
-            <p class="control">
-              <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
-                <span class="icon">
-                  <i class="fas fa-download"></i>
-                </span>
-                <span>Download</span>
-              </a>
-            </p>
+    <section class="section">
+      <nav class="navbar is-fixed-bottom">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-mobile">
+              <div class="column is-one-third">ยอดรวม</div>
+              <div class="column">550 บาท</div>
+              <div class="column">1 รายการ</div>
+            </div>
+          </div>
+          <div class="card-content footer-p">
+            <div class="columns is-mobile">
+              <div class="column"><a class="button is-success is-fullwidth is-rounded">ดำเนินการต่อ</a></div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  
-  <section class="section" id="app">
-    <div class="container">
-      <h1 class="title"><span id="userName"></span></h1>
-      <p class="subtitle" id="accessToken"></p>
-    </div>
-  </section>
+      </nav>
+    </section>
 
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
   <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/fontawesome.min.js" integrity="sha256-kfloLmH/F2aW936XePvhgKlJH4TZMn/nAG5oxtuiy8Q=" crossorigin="anonymous"></script>
 
 
 </body>

@@ -14,25 +14,20 @@ function setMessageByElement(element, message){
 
 function initializeLiffOrDie(myLiffId) {
   if (!myLiffId) {
-    setMessageByElement('accessToken', 'Service is unavailable. Please check your LIFF ID.');
+    setMessageByElement('app', 'Service is unavailable. Please check your LIFF ID.');
   } else {
     initializeLiff(myLiffId);
     console.log('OK!');
   }
 }
 
-function initializeLiff(myLiffId) {  liff
-    .init({
+function initializeLiff(myLiffId) {
+
+    liff.init({
       liffId: myLiffId
     })
     .then(() => {
       initializeApp();
-
-      if (!liff.isInClient()) {
-        setMessageByElement('app', 'Please use LINE app instead.');
-        alert(!liff.isInClient());
-      }
-
     })
     .catch((e) => {
       console.log(e);
@@ -41,9 +36,16 @@ function initializeLiff(myLiffId) {  liff
 
 function initializeApp() {
 
+  /*if (!liff.isInClient()) {
+    setMessageByElement('app', 'Please use LINE app instead.');
+    return false;//console.lgo(liff.isInClient());
+  }*/
+
   liff.getProfile().then(function(profile) {
 
       setMessageByElement('userName', profile.displayName);
+      document.getElementById('userImg').src = profile.pictureUrl;
+      document.getElementById('userImg').alt = profile.pictureUrl;
 
   }).catch(function(e) {
     console.log(e);

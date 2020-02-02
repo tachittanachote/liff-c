@@ -23,7 +23,8 @@ function recursiveIssuer(m) {
 module.exports = {
   entry: {
     main: './src/js/liff-starter.js',
-    css: resolve(__dirname, 'src/css/bulma.css'),
+    bulma: resolve(__dirname, 'src/css/bulma.css'),
+    style: resolve(__dirname, 'src/css/main.css'),
   },
 
   output: {
@@ -83,13 +84,20 @@ module.exports = {
         defaultVendors: {
           filename: 'script/c_[id].[chunkhash:12].js'
         },
-        fooStyles: {
-           name: 'css',
-           test: (m, c, entry = 'css') =>
-             m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
-           chunks: 'all',
-           enforce: true,
-         },
+        bulmaStyles: {
+          name: 'bulma',
+          test: (m, c, entry = 'bulma') =>
+            m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+          chunks: 'all',
+          enforce: true,
+        },
+        styleStyles: {
+          name: 'style',
+          test: (m, c, entry = 'style') =>
+            m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+          chunks: 'all',
+          enforce: true,
+        },
       },
     },
     runtimeChunk: 'single', // optional, recommended

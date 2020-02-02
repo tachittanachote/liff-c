@@ -47,53 +47,86 @@
       }
     }
   ],
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!src/css/main.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!src/css/main.css": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
   "modules": {
     "byIdentifier": {
       "node_modules/babel-loader/lib/index.js??ref--4!src/js/liff-starter.js": 0,
-      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!src/css/bulma.css": 1
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!src/css/bulma.css": 1,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!src/css/main.css": 2
     },
     "usedIds": {
       "0": 0,
-      "1": 1
+      "1": 1,
+      "2": 2
     }
   },
   "chunks": {
     "byName": {
       "runtime": 0,
       "vendor": 1,
-      "css": 2,
-      "main": 3
+      "bulma": 2,
+      "main": 3,
+      "style": 4
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
       2,
-      3
+      3,
+      4
     ]
   },
   "prepreHash": "x",
-  "preHash": "f3ddeb7ef6483b994d1c",
-  "hash": "6b10f292bc8ecd8b95d3",
+  "preHash": "51de4346eb0923f8da49",
+  "hash": "32d2d888210d08be3a52",
   "moduleHashs": {
-    "/Users/tsch/Desktop/public/node_modules/babel-loader/lib/index.js??ref--4!/Users/tsch/Desktop/public/src/js/liff-starter.js": "f1c789daa3f803e130d3a0c0b6b84f91",
-    "/Users/tsch/Desktop/public/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/tsch/Desktop/public/node_modules/css-loader/dist/cjs.js!/Users/tsch/Desktop/public/src/css/bulma.css": "7a87244ba0ec1786a112123ce8901176",
-    "css /Users/tsch/Desktop/public/node_modules/css-loader/dist/cjs.js!/Users/tsch/Desktop/public/src/css/bulma.css 0": "0446e08c582e02a9be0ccb87c75464d9"
+    "/Users/tsch/Desktop/liff-c/node_modules/babel-loader/lib/index.js??ref--4!/Users/tsch/Desktop/liff-c/src/js/liff-starter.js": "2621008f08abc9f4f8ba5923cce15397",
+    "/Users/tsch/Desktop/liff-c/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/tsch/Desktop/liff-c/node_modules/css-loader/dist/cjs.js!/Users/tsch/Desktop/liff-c/src/css/bulma.css": "7a87244ba0ec1786a112123ce8901176",
+    "/Users/tsch/Desktop/liff-c/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/tsch/Desktop/liff-c/node_modules/css-loader/dist/cjs.js!/Users/tsch/Desktop/liff-c/src/css/main.css": "9986f426709045eeafb788aa885686d9",
+    "css /Users/tsch/Desktop/liff-c/node_modules/css-loader/dist/cjs.js!/Users/tsch/Desktop/liff-c/src/css/bulma.css 0": "0446e08c582e02a9be0ccb87c75464d9",
+    "css /Users/tsch/Desktop/liff-c/node_modules/css-loader/dist/cjs.js!/Users/tsch/Desktop/liff-c/src/css/main.css 0": "279fd2909055bc576d968c908d30ac02"
   },
   "chunkHashs": {
     "0": "53e2ca3711f7b1a6f37ccfbcf63df61a",
-    "1": "500741bc0c158058bfc214bd9e602be7",
-    "2": "330f774e6809930a939fef088bf30178",
-    "3": "95a185f1af6ed6773ab6b0fb289ce0e1"
+    "1": "f6eb74855f93baf6a5067cc8abcab360",
+    "2": "fc388d8f15d6d94eb9f1902d84c5dbc5",
+    "3": "95a185f1af6ed6773ab6b0fb289ce0e1",
+    "4": "a8e19e738bb42cb3622a029c16af3312"
   },
   "chunkModuleIds": {
     "0": [],
     "1": [
       0,
       "",
-      1
+      "",
+      1,
+      2
     ],
     "2": [],
-    "3": []
+    "3": [],
+    "4": []
   }
 }
